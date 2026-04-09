@@ -1,0 +1,6 @@
+{
+  "name": "swift-type-driven-design",
+  "description": "Teaches Gemini to apply Type-Driven Design when writing and reviewing Swift code.",
+  "version": "0.1.0",
+  "contextFileName": "GEMINI.md"
+}

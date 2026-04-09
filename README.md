@@ -32,24 +32,52 @@ Further reading that inspired the series:
 
 ## Installation
 
-### Recommended — Claude Code plugin marketplace
+Installation differs by AI agent. Claude Code and Cursor have plugin systems; Codex, OpenCode, and Gemini use clone-and-configure.
 
-In Claude Code, register this repo as a marketplace and install the plugin:
+### Claude Code (plugin marketplace)
 
 ```
 /plugin marketplace add MathisDetourbet/swift-type-driven-design-skill
 /plugin install swift-type-driven-design@swift-type-driven-design-marketplace
 ```
 
-That's it. Claude Code will pick up the skill automatically — no restart needed for new sessions. To update later:
+Update later with:
 
 ```
 /plugin marketplace update swift-type-driven-design-marketplace
 ```
 
-### Manual install (without the plugin system)
+### Cursor (plugin)
 
-If you'd rather drop the skill file directly into your user skills directory:
+Install directly from the repo via Cursor's plugin system — point it at this GitHub URL. Cursor reads `.cursor-plugin/plugin.json`, which registers the skill from `skills/`.
+
+### Codex
+
+See [`.codex/INSTALL.md`](.codex/INSTALL.md) — a git clone + symlink into `~/.agents/skills/`. Or tell Codex:
+
+> Fetch and follow instructions from https://raw.githubusercontent.com/MathisDetourbet/swift-type-driven-design-skill/main/.codex/INSTALL.md
+
+### OpenCode
+
+See [`.opencode/INSTALL.md`](.opencode/INSTALL.md) — clone the repo and add its `skills/` path to `skills.paths` in your `opencode.json`. Or tell OpenCode:
+
+> Fetch and follow instructions from https://raw.githubusercontent.com/MathisDetourbet/swift-type-driven-design-skill/main/.opencode/INSTALL.md
+
+### Gemini CLI
+
+This repo ships a Gemini extension ([`gemini-extension.json`](gemini-extension.json) + [`GEMINI.md`](GEMINI.md)). Install with:
+
+```bash
+gemini extensions install https://github.com/MathisDetourbet/swift-type-driven-design-skill
+```
+
+### Generic (any agent honoring `AGENTS.md`)
+
+Many agents auto-read `AGENTS.md` from the repository root. Clone the repo into your project (or next to it) and the agent will pick up the [`AGENTS.md`](AGENTS.md) pointer, which in turn references [`skills/type-driven-design/SKILL.md`](skills/type-driven-design/SKILL.md).
+
+### Manual install (no plugin system)
+
+Drop the skill file directly into your user skills directory:
 
 ```bash
 mkdir -p ~/.claude/skills/type-driven-design
@@ -57,15 +85,13 @@ curl -fsSL https://raw.githubusercontent.com/MathisDetourbet/swift-type-driven-d
   -o ~/.claude/skills/type-driven-design/SKILL.md
 ```
 
-Or clone the whole repo and symlink it:
+### Verifying
 
-```bash
-git clone https://github.com/MathisDetourbet/swift-type-driven-design-skill.git
-ln -s "$PWD/swift-type-driven-design-skill/skills/type-driven-design" \
-  ~/.claude/skills/type-driven-design
-```
+After installing through any path, ask the agent:
 
-Verify either install by running `/type-driven-design` or by asking Claude to review a Swift domain model — the skill should auto-load from its description.
+> Review this struct using type-driven-design principles.
+
+The skill should auto-load from its description and produce concrete suggestions.
 
 ## Usage
 

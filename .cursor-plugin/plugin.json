@@ -1,0 +1,19 @@
+{
+  "name": "swift-type-driven-design",
+  "displayName": "Swift Type-Driven Design",
+  "description": "Teaches the AI agent to apply Type-Driven Design when writing and reviewing Swift code: make illegal states unrepresentable, parse don't validate, and eliminate defensive runtime checks.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Mathis Detourbet"
+  },
+  "homepage": "https://github.com/MathisDetourbet/swift-type-driven-design-skill",
+  "repository": "https://github.com/MathisDetourbet/swift-type-driven-design-skill",
+  "keywords": [
+    "swift",
+    "type-driven-design",
+    "domain-modeling",
+    "parse-dont-validate",
+    "ios"
+  ],
+  "skills": "./skills/"
+}
