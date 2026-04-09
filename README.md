@@ -32,22 +32,40 @@ Further reading that inspired the series:
 
 ## Installation
 
-### Option A — Clone into your skills directory
+### Recommended — Claude Code plugin marketplace
 
-```bash
-git clone https://github.com/MathisDetourbet/swift-type-driven-design-skill.git \
-  ~/.claude/skills/type-driven-design
+In Claude Code, register this repo as a marketplace and install the plugin:
+
+```
+/plugin marketplace add MathisDetourbet/swift-type-driven-design-skill
+/plugin install swift-type-driven-design@swift-type-driven-design-marketplace
 ```
 
-### Option B — Copy just the SKILL.md
+That's it. Claude Code will pick up the skill automatically — no restart needed for new sessions. To update later:
+
+```
+/plugin marketplace update swift-type-driven-design-marketplace
+```
+
+### Manual install (without the plugin system)
+
+If you'd rather drop the skill file directly into your user skills directory:
 
 ```bash
 mkdir -p ~/.claude/skills/type-driven-design
-curl -fsSL https://raw.githubusercontent.com/MathisDetourbet/swift-type-driven-design-skill/main/SKILL.md \
+curl -fsSL https://raw.githubusercontent.com/MathisDetourbet/swift-type-driven-design-skill/main/skills/type-driven-design/SKILL.md \
   -o ~/.claude/skills/type-driven-design/SKILL.md
 ```
 
-Then restart Claude Code (or start a new session). Verify by running `/type-driven-design` or by asking Claude to review a Swift domain model — the skill should auto-load from its description.
+Or clone the whole repo and symlink it:
+
+```bash
+git clone https://github.com/MathisDetourbet/swift-type-driven-design-skill.git
+ln -s "$PWD/swift-type-driven-design-skill/skills/type-driven-design" \
+  ~/.claude/skills/type-driven-design
+```
+
+Verify either install by running `/type-driven-design` or by asking Claude to review a Swift domain model — the skill should auto-load from its description.
 
 ## Usage
 
