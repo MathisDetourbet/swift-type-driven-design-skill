@@ -24,4 +24,4 @@ Any time you are writing, reviewing, or refactoring Swift code and you encounter
 
 ## Credit
 
-All ideas and examples are distilled from the [Type-Driven Design with Swift](https://swiftology.io/collections/type-driven-design/) series by **Alexey Naumov** at swiftology.io.
+All ideas and examples are distilled from the [Type-Driven Design with Swift](https://swiftology.io/collections/type-driven-design/) series by **Alex Ozun** at swiftology.io.

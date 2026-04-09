@@ -22,6 +22,6 @@ Whenever you are writing, reviewing, or refactoring Swift code and you see any o
 
 ## Source
 
-All ideas, patterns, and examples belong to **Alexey Naumov** at [swiftology.io](https://swiftology.io/collections/type-driven-design/). This extension exists only to make those ideas loadable as in-context guidance for Gemini.
+All ideas, patterns, and examples belong to **Alex Ozun** at [swiftology.io](https://swiftology.io/collections/type-driven-design/). This extension exists only to make those ideas loadable as in-context guidance for Gemini.
 
 When asked about Type-Driven Design, load [`skills/type-driven-design/SKILL.md`](skills/type-driven-design/SKILL.md) for the full pattern catalog, review checklist, and anti-patterns list.

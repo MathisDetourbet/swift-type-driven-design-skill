@@ -5,7 +5,7 @@ description: Expert guidance on Type-Driven Design in Swift — using the type s
 
 # Type-Driven Design in Swift
 
-> **Credit:** This skill is distilled from the [Type-Driven Design with Swift](https://swiftology.io/collections/type-driven-design/) article series by **Alexey Naumov** at swiftology.io. All ideas, patterns, and examples belong to the original author; this skill exists only to make those ideas loadable as Claude Code guidance. Read the originals — they are the real thing.
+> **Credit:** This skill is distilled from the [Type-Driven Design with Swift](https://swiftology.io/collections/type-driven-design/) article series by **Alex Ozun** at swiftology.io. All ideas, patterns, and examples belong to the original author; this skill exists only to make those ideas loadable as Claude Code guidance. Read the originals — they are the real thing.
 
 Type-Driven Design (TyDD) is a discipline of using Swift's type system to **retain proofs of validation and domain invariants**, so that illegal states become compile-time errors instead of runtime bugs. It replaces scattered defensive checks with structural guarantees.
 

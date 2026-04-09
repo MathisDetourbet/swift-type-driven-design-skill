@@ -15,7 +15,7 @@ The skill covers seven concrete patterns — domain primitives, sum types for OR
 
 ## Credit
 
-The content of this skill is distilled from the excellent **[Type-Driven Design with Swift](https://swiftology.io/collections/type-driven-design/)** article series by **[Alexey Naumov](https://swiftology.io/)** at swiftology.io. All credit for the ideas, patterns, and examples belongs to the original author — this skill exists only to make those ideas available to Claude Code as loadable guidance.
+The content of this skill is distilled from the excellent **[Type-Driven Design with Swift](https://swiftology.io/collections/type-driven-design/)** article series by **[Alex Ozun](https://swiftology.io/)** at swiftology.io. All credit for the ideas, patterns, and examples belongs to the original author — this skill exists only to make those ideas available to Claude Code as loadable guidance.
 
 If you find the skill useful, go read the original articles. They are the real thing:
 
@@ -111,4 +111,4 @@ Issues and PRs welcome. If you spot a pattern from the original series that's mi
 
 ## License
 
-Content is provided as-is. The underlying ideas are the work of Alexey Naumov; see the [Credit](#credit) section for links to the source material.
+Content is provided as-is. The underlying ideas are the work of Alex Ozun; see the [Credit](#credit) section for links to the source material.
